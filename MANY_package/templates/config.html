@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>MANY - Config</title></head><body>
+<h2>Configuración de MANY</h2>
+{% if message %}<p style="color:green">{{message}}</p>{% endif %}
+<form method="post">
+  <h3>Amazon</h3>
+  <label>Access Key: <input name="amazon_access" /></label><br/>
+  <label>Secret Key: <input name="amazon_secret" /></label><br/>
+  <label>Tag (Tracking ID): <input name="amazon_tag" value="{{current.amazon_tag}}"/></label><br/>
+  <h3>ClickBank</h3>
+  <label>API Key: <input name="clickbank_key" /></label><br/>
+  <label>Nickname: <input name="clickbank_nick" /></label><br/>
+  <h3>Otros</h3>
+  <label>eBay Key: <input name="ebay_key" /></label><br/>
+  <label>AliExpress Key: <input name="aliexpress_key" /></label><br/>
+  <h3>OpenAI (opcional)</h3>
+  <label>OpenAI API Key: <input name="openai_key" /></label><br/>
+  <button>Guardar y Activar</button>
+</form>
+<p><a href="/status">Volver al panel</a></p></body></html>

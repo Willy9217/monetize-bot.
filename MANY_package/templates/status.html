@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>MANY - Status</title></head><body>
+<h1>MANY - Panel de Control</h1>
+<p><a href="/logout">Cerrar sesión</a> | <a href="/config">Configurar claves</a> | <a href="/posts">Ver publicaciones</a> | <a href="/earnings.csv">Exportar ingresos (CSV)</a></p>
+<h2>Estado</h2>
+<ul>
+  <li>Borradores: {{drafts}}</li>
+  <li>Publicadas: {{published}}</li>
+  <li>Ingresos estimados: ${{'%.2f'|format(total)}}</li>
+</ul>
+<h2>Estrategias</h2>
+<ul>
+{% for s in strategies %}
+  <li>{{s['name']}} - score: {{'%.2f'|format(s['score'])}} - last run: {{s['last_run']}}</li>
+{% endfor %}
+</ul>
+<form action="/admin/start" method="post"><button>Iniciar Auto</button></form>
+<form action="/admin/stop" method="post"><button>Detener Auto</button></form>
+</body></html>
