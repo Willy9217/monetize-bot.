@@ -1,0 +1,1 @@
+scp monetize_package_v2.zip root@TU_IP:/opt/

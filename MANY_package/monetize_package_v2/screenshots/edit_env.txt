@@ -1,0 +1,1 @@
+nano .env  # Añade OPENAI_API_KEY y AFFIL_DOMAINS

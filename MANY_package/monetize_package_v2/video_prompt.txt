@@ -1,0 +1,1 @@
+Crea un video explicativo en español (español latino), moderno y profesional, mostrando: título 'Monetize Bot Ready', capturas de comandos (scp, edición de .env, docker-compose up), y un panel de estado. Narración clara y fondo musical inspirador. Duración ~60 segundos.

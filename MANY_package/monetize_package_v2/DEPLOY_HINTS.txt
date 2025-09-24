@@ -1,0 +1,9 @@
+Comandos rápidos para desplegar (VPS con Docker):
+mkdir -p /opt/monetize && cd /opt/monetize
+# subir desde tu PC: scp monetize_package_v2.zip root@TU_IP:/opt/
+unzip -o monetize_package_v2.zip -d monetize_bot_ready
+cd monetize_bot_ready
+# editar .env con tus claves (OPENAI_API_KEY, SECRET_KEY, AFFIL_DOMAINS)
+nano .env
+docker-compose up -d --build
+# luego configuras nginx y certbot si quieres HTTPS
