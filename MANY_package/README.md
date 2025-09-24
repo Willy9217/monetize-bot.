@@ -36,3 +36,57 @@ Notas de seguridad:
 
 Soporte:
 - Si algo falla pega aquí los logs de Render (Dashboard -> Logs) y te guío.
+- # --- Core Web Server ---
+flask
+gunicorn
+fastapi
+uvicorn
+
+# --- Utilidades generales ---
+requests
+httpx
+beautifulsoup4
+lxml
+python-dotenv
+pydantic
+schedule
+
+# --- IA y NLP ---
+openai
+transformers
+torch
+torchvision
+sentence-transformers
+
+# --- Automatización y scraping ---
+selenium
+playwright
+scrapy
+
+# --- Manejo de datos ---
+pandas
+numpy
+
+# --- Bases de datos ---
+sqlalchemy
+pymongo
+psycopg2-binary
+
+# --- APIs y seguridad ---
+cryptography
+authlib
+PyJWT
+
+# --- Email / Mensajería ---
+twilio
+python-telegram-bot
+
+# --- Dashboard / Estadísticas ---
+plotly
+matplotlib
+dash
+
+# --- Extras para estabilidad ---
+tenacity
+retrying
+
